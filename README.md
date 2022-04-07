@@ -31,9 +31,9 @@ Creats a total summary and lot summary breakdown for PSI metrics using R's summa
 #### Overall Summary (all lots)
 ![total_summary](/Resources/total_summary.png)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Across the board, MechaCar suspension coils have a mean of 1498.78 compared to a population mean of 1500.  The Variance for MechaCar as a whole is 62.29 and falls under the 100 psi variance requirement.  However, digging deaper into the data and summarizing variance by lot number one can see that there are production issues with lot 3.
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Across the board, MechaCar suspension coils have a mean of 1498.78 compared to a population mean of 1500.  The variance for MechaCar suspension coil PSI as a whole is 62.29 and falls under the 100 psi variance requirement.  However, digging deaper into the data and summarizing variance by lot number one can see that there are production issues with lot 3.
 
 #### Per Lot Summary
 ![lot_summary](/Resources/lot_summary.png)
 
-Lot 3 does not fall within the 100 PSI variance and shows a variance of 170.  This pinpoints a place to begin investigation.
+Lot 3 does not fall within the 100 PSI variance and shows a variance of 170.  This pinpoints a place to begin further investigation.
