@@ -28,6 +28,8 @@ Using R's summary() and lm() functions, a multiple linear regression analysis wa
 
 Creats a total summary and lot summary breakdown for PSI metrics using R's summarize() function.
 
+The p-value
+
 #### Overall Summary (all lots)
 ![total_summary](/Resources/total_summary.png)
 
@@ -37,3 +39,19 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ![lot_summary](/Resources/lot_summary.png)
 
 Lot 3 does not fall within the 100 PSI variance acceptability and shows a variance of 170.  This pinpoints a place to begin further investigation.
+
+## T-Tests on Suspension Coils
+Uses R's t-test() function see if the PSI across all lots is statistically different from a population mean of 1,500 pounds per square inch.
+
+#### T-Test across all manufacturing lots
+![ttest_total](/Resources/t_test.png)
+
+Across all manufacturing lots, the mean PSI for suspension coils is 1498.78 with a p-value of 0.06.  Because a p-value of .06 is greater than the assumed  significance level of .05, there is not enough evidence to reject the null hypothesis. This means that statistically, the PSI of MechaCar suspension coils is not divergent from a population mean of 1,500 PSI.
+
+#### T-Tests per lot
+
+![lots_ttest](/Resources/lot_ttest.png)
+
+However, by performing t-tests against each individual lot, we can see that lot 3, with a mean of 1496.14 PSI and p-value of .04 fits the alternative hypothesis. Lot 3 has significant difference between mean PSI and the population mean PSI.  
+
+Lots 1 and Lots 2 have p-values of 1 and .607 respectively.  Lot 1 most closely matches a mean of 1500 PSI.
