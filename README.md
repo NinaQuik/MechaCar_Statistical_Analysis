@@ -6,7 +6,7 @@ Reviews manufacturing data for a fictional car company to determine issues that 
 - Creates a linear model that predicts the mpg of MechaCar prototypes using several variables from the [MechaCar_mpg.csv](MechaCar_mpg.csv) file which contains 50 prototype MechaCars.
 - Collects summary statistics on the PSI from three manufacturing lots in [Suspension_Coil.csv](Suspension_Coil.csv)
 - Runs t-tests to determine if the manufacturing lots are statistically different than the mean population.
-- Designs a statistical study to XYZ.
+- Designs a statistical study to compare MechaCar pricing by variable to competitor pricing.
 
 ### Tools
 - R version 4.1.3
@@ -27,8 +27,6 @@ Using R's summary() and lm() functions, a multiple linear regression analysis wa
 ## Summary Statistics on Suspension Coils
 
 Creats a total summary and lot summary breakdown for PSI metrics using R's summarize() function.
-
-The p-value
 
 #### Overall Summary (all lots)
 ![total_summary](/Resources/total_summary.png)
