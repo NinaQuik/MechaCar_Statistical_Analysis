@@ -55,3 +55,25 @@ Across all manufacturing lots, the mean PSI for suspension coils is 1498.78 with
 However, by performing t-tests against each individual lot, we can see that lot 3, with a mean of 1496.14 PSI and p-value of .04 fits the alternative hypothesis. Lot 3 has significant difference between mean PSI and the population mean PSI.  
 
 Lots 1 and Lots 2 have p-values of 1 and .607 respectively.  Lot 1 most closely matches a mean of 1500 PSI.
+
+## Study Design: MechaCar vs Competition
+Metrics that are usefull to a consumer include cost, fuel efficiency, horse power, maintenance cost and safety ratings. The MechaCar company will want to price cars at the optimal level to maximize revenue, however, the price that customers will pay is dependent on independent variables like MPG, Safety, and features (carrying capacity, horsepower, AWD) compared to those of the competition.
+
+#### Metrics
+To understand the ideal price point for mechaCars it would be good to sample the Price vs. MPG,  Price vs. Safety Rating and Price vs. Horse Power compared to the competition. 
+First we would want to bucket the cars into different classes - ex, compact, SUV, midsize, etc.
+- For the purposes of this exercise we'll start with class = SUV.
+- The independent metrics that we would collect are MPG, Average Maintenance Cost, AWD, Safety Rating.  
+- The dependent metric is price.
+- We would limit cars to the current year, or current year and previous year.
+
+#### Data Sets
+We would then determine which competitors to compare against and retrieve a dataset containing those metrics. If this data isn't readily available (ex, through Kelly Blue Book), then webscraping could be performed.
+
+### Statistical Tests
+- The null hypothesis is that the price for MechCar SUVs are priced similarly to the competition for key factors such as MPG, Maintenance, AWD, Features, Safety Rating.
+- The Alternative hypothesis is that the price for MechaCar SUVs are priced below or above the competition for key factors such as MPG, Maintenance, AWD, Features, Safety Rating.
+
+Assuming the sample size is large, Multiple two sample T-tests could be performed against numerical data like MPG, Safety Rating or Maintenance Costs.
+A chi-squared test could be used to compare features (AWD, Horsepower, Interior, entertainment system) to price.
+
